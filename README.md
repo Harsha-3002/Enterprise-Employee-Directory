@@ -1,2 +1,3 @@
-# Enterprise-Employee-Directory
-A full-stack directory manager featuring JWT Authentication and complete CRUD functionality 
+# Enterprise Employee Directory
+
+Frontend of Employee Management System (React Project)
