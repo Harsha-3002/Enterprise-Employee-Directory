@@ -1,0 +1,160 @@
+/* src/components/Home/Home.css */
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.home-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.home-title {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home-subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.login-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.login-card h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.login-card p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.login-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.login-card ul li {
+  color: #555;
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 14px;
+}
+
+.login-card ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.card-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.card-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.admin-card {
+  border-top: 5px solid #e74c3c;
+}
+
+.admin-button {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.admin-button:hover {
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+}
+
+.directory-card {
+  border-top: 5px solid #27ae60;
+}
+
+.directory-button {
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+}
+
+.directory-button:hover {
+  box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+}
+
+.home-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.home-footer p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 32px;
+  }
+  
+  .home-subtitle {
+    font-size: 16px;
+  }
+  
+  .login-options {
+    grid-template-columns: 1fr;
+  }
+}
